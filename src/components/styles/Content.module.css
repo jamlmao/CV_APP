@@ -1,0 +1,104 @@
+.textCenter {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .col {
+    flex-direction: column;
+  }
+  
+  .btnWrapper {
+    margin-left: auto;
+  
+    & button + button {
+      margin-left: 1rem;
+    }
+  }
+  
+  .titleWrapper {
+    border-bottom: 4px solid white;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .list {
+    list-style: none;
+    padding-left: 1.5rem;
+  }
+  
+  .item {
+    justify-content: space-between;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .personal {
+    list-style: none;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .personalWrapper {
+    text-align: center;
+  }
+  
+  .description {
+    padding-left: 2rem;
+  
+    & ul {
+      list-style-type: diamonds;
+    }
+  }
+  
+  @counter-style diamonds {
+    system: cyclic;
+    symbols: '⬥';
+    suffix: ' ';
+  }
+  
+  .edit {
+    margin-left: auto;
+  }
+
+  .editButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .editButton:hover {
+    background-color: #0056b3;
+  }
+
+input {
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+
+.personalContainer {
+  position: relative;
+  padding: 10px;
+}
+
+.personalContainer:hover .editButton {
+  opacity: 1;
+}
