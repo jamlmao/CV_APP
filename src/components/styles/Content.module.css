@@ -21,7 +21,7 @@
   }
   
   .titleWrapper {
-    margin: 10px 0;
+    margin: 3px 0;
     border-bottom: 4px solid white;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,7 @@
   
   .list {
     list-style: none;
-    padding-left: 1.5rem;
+    
   }
   
   .item {
@@ -44,7 +44,7 @@
   .personal {
     list-style: none;
     justify-content: center;
-    gap: 1rem;
+    gap: .5rem;
   }
   
   .personalWrapper {
@@ -59,11 +59,6 @@
     }
   }
   
-  @counter-style diamonds {
-    system: cyclic;
-    symbols: '⬥';
-    suffix: ' ';
-  }
   
   .edit {
     margin-left: auto;
@@ -106,9 +101,185 @@ input {
   opacity: 1;
 }
 
+.gpa{
+  padding-left: .7rem;
+}
 
 .saving {
   /* styles for save state */
   background-color: #4CAF50;
   color: white;
 }
+
+
+.introTextArea {
+  width: 100%;
+  min-height: 200px;
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.introText {
+  margin-top: 10px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+
+
+
+.experienceList {
+  list-style: none;
+  padding: 0;
+ 
+}
+
+.experienceItem {
+  padding: 5px;
+ 
+ 
+}
+
+.experienceFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.experienceCompany {
+  font-weight: bold;
+  font-size: 1.2em;
+
+}
+
+.experiencePosition {
+  font-size: 1.0em;
+
+}
+
+.experienceDates {
+ 
+  font-size: 1.2em;
+
+}
+
+.experienceDescription {
+
+  line-height: 1.6;
+  padding-left: .7rem;
+}
+
+.experienceForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.experienceInput {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.experienceTextarea {
+  min-height: 100px;
+  resize: vertical;
+  padding: 10px;
+  border: 1px solid #e4dbdb;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.experienceAddButton {
+  background: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.experienceRemoveButton {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+
+.skillList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 0;
+  margin: 20px 0;
+  list-style: none;
+}
+
+.skillItem {
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skillName {
+  font-size: 1rem;
+
+}
+
+.skillRemoveButton {
+  background: white;
+  border: none;
+  color: #dc3545;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: .2rem 5px;
+}
+
+.skillsForm {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.skillsInput {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.skillAddButton {
+  background: #28a745;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+

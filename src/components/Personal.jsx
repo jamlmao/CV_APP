@@ -9,7 +9,7 @@ function Personal(){
         address: "Home or Campus Street Address",
         city: "City, State Zip",
         email: "youremail@domain.com",
-        socials: "@socials",
+        socials: "linkedin.com/in/yourname",
         phone: "xxxx-xxx-xxxx" 
     });
 

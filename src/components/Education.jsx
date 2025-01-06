@@ -88,8 +88,8 @@ function Education(){
                           <p>{educationInfo.degree}</p>
                           <p>{educationInfo.gradDate}</p>
                         </li>
-                        <li>
-                            GPA: {educationInfo.gpa}
+                        <li className={Styles.gpa}>
+                            • GPA: {educationInfo.gpa}
                         </li>
                    </ul>
                 </>
