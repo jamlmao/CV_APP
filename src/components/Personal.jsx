@@ -32,7 +32,7 @@ function Personal(){
             <div className={Styles.personalContainer}>
                 <button 
                     onClick={handleEdit}
-                    className={Styles.editButton}
+                   className={`${Styles.editButton} ${isEditing ? Styles.saving : ''}`}
                 >
                     {isEditing ? 'Save' : 'Edit'}
                     </button>
@@ -40,9 +40,9 @@ function Personal(){
         {isEditing?(
             <>
                 <input type="text" name="name" value={personalInfo.name} 
-                onChange={(e) => handleChagne(e, 'name')} 
+                onChange={(e) => handleChange(e, 'name')} 
                 className={`${Styles.textCenter} ${Styles.name}`} />
-                <hr />
+              
                 <ul className={`${Styles.flex} ${Styles.personal}`}>
                     <li>
                         <input type="text" name="address" value={personalInfo.address} onChange={(e) => handleChange(e, 'address')} className={`${Styles.textCenter} ${Styles.address}`} />
@@ -60,11 +60,11 @@ function Personal(){
                         <input type="text" name="phone" value={personalInfo.phone} onChange={(e) => handleChange(e, 'phone')} className={`${Styles.textCenter} ${Styles.phone}`} />
                     </li>
                 </ul>
+                <hr />
             </>
         ):(
             <>
                 <h1 className={`${Styles.textCenter} ${Styles.name}`}>{personalInfo.name}</h1>
-                <hr />
                 <ul className={`${Styles.flex} ${Styles.personal}`}>
                     <li className={Styles.address}>{personalInfo.address}</li>
                     <li className={Styles.city}>•{personalInfo.city}</li>
@@ -72,6 +72,7 @@ function Personal(){
                     <li className={Styles.socials}>•{personalInfo.socials}</li>
                     <li className={Styles.phone}>•{personalInfo.phone}</li>
                 </ul>
+                <hr />
             </>
         )}
           </div>

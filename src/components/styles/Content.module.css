@@ -21,6 +21,7 @@
   }
   
   .titleWrapper {
+    margin: 10px 0;
     border-bottom: 4px solid white;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +71,7 @@
 
   .editButton {
     position: absolute;
-    top: 10px;
+    top: 3px;
     right: 10px;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -97,8 +98,17 @@ input {
 .personalContainer {
   position: relative;
   padding: 10px;
+  margin: 20px 0;
 }
 
-.personalContainer:hover .editButton {
+.personalContainer:hover .editButton:not(.saving),
+.editButton.saving {
   opacity: 1;
+}
+
+
+.saving {
+  /* styles for save state */
+  background-color: #4CAF50;
+  color: white;
 }

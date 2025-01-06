@@ -9,3 +9,8 @@
   margin: 0 auto;
   padding: 2rem;
 }
+
+.component-spacing {
+  margin: 10px 0;
+  border: 10px solid #a72b2b;
+}
